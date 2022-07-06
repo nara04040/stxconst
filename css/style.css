@@ -1,0 +1,74 @@
+@charset "utf-8";
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: #333;
+}
+
+img {
+    vertical-align: middle;
+    border: 0;
+
+}
+
+
+
+
+/* common */
+
+
+
+
+
+/* wrap */
+
+
+
+
+
+/* header */
+
+
+
+
+/* main */
+
+
+
+
+/* visual */
+
+
+
+
+/* business */
+
+
+
+
+/* notice */
+
+
+
+
+/* help */
+
+
+
+/* about */
+
+
+
+
+/* footer */
