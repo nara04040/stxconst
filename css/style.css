@@ -54,45 +54,96 @@ body {
 }
 
 
-
-/* wrap */
-
-
-
+.wrap {}
 
 
 /* header */
+.header {}
+
+.header::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    top: 0;
+    width: 100vw;
+    height: 80px;
+    background-color: #fff;
+    box-shadow: 0px 0px 7px 0px rgb(0 0 0 / 20%);
+}
+
+.header .inner {
+
+}
+
+.logo {
+    position: absolute;
+    right: calc(100% + 100px);
+    top: 20px;
+    width: 150px;
+    height: 39px;
+    background: url('../images/logo.png') no-repeat center;
+    background-size: cover;
+    font-size: 0;
+}
+
+.gnb {}
+
+.lang {
+    position: absolute;
+    left: calc(100% + 100px);
+    top: 34px;
+    font-size: 0;
+    white-space: nowrap;
+}
 
 
 
+.lang a {
+    display: inline-block;
+    color: #888;
+    font-size: 15px;
+    font-weight: 500;
+    text-transform: uppercase;
 
-/* main */
+}
 
 
+.lang .lang-active {
+    color: #000;
+}
 
+.lang-bar {
+    display: inline-block;
+    width: 1px;
+    height: 12px;
+    background-color: #999;
+    margin: 0 10px;
+}
 
 /* visual */
+.visual {}
 
 
 
-
-/* business */
-
-
-
-
-/* notice */
+/* part */
+.part {}
 
 
 
+/* news */
+.news {}
 
-/* help */
 
+
+/* cs */
+.cs {}
 
 
 /* about */
-
+.about {}
 
 
 
 /* footer */
+.footer {}
