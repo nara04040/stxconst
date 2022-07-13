@@ -1,8 +1,26 @@
-$(document).ready(function () {
-    // html 태그의 lang을 알아보자. (attr수업)
-    // let lang = $('nav').attr('gogo', '55');
-    // console.log(lang)
+$(document).ready(function(){
+    // 안내창 기능
+    // 추가기능 : 스크롤바 없애기
+    $('html').css('overflow', 'hidden');
+    let modalWrap = $('.modal-wrap');
+    let modalClose = $('.modal-close');
+    modalClose.click(function(){
+        modalWrap.stop().fadeOut(100);
+        $('html').css('overflow', 'auto')
+    });
+    let modalMain = $('.modal-main');
+    // 내용클릭
+    modalMain.click(function(event){
+        event.stopPropagation()
+    })
+    // 배경클릭
+    modalWrap.click(function(event){
+        $(this).stop().fadeOut(100);
+        $('html').css('overflow', 'auto')
+    })
+});
 
+$(document).ready(function () {
     // .header를 저장한다.
     let header = $('.header');
     let gnb = $('.gnb');
